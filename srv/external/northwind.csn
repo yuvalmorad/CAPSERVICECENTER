@@ -1,7 +1,8 @@
 {
     "definitions": {
         "northwind": {
-            "kind": "service"
+            "kind": "service",
+            "@cds.external":true
         },
         "northwind.Categories": {
             "kind": "entity",

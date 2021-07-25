@@ -43,22 +43,9 @@
   },
   "cds": {
     "requires": {
-      "db": {
-        "kind": "sql",
-        "credentials": {
-          "database": "my.db"
-        }
-      },
       "northwind": {
         "kind": "odata",
         "model": "srv/external/northwind",
-        "credentials": {
-          "destination": "Northwind_full_url"
-        }
-      },
-      "metadata": {
-        "kind": "odata",
-        "model": "srv/external/metadata",
         "credentials": {
           "destination": "Northwind_full_url"
         }

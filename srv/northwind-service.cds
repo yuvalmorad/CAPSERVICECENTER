@@ -1,16 +1,10 @@
-using {northwind as db} from '../db/northwind.cds';
+using { my.northwind as northwind} from '../db/northwind.cds';
 
 service NorthwindService {
     @readonly
-    entity Categories as projection on db.Categories {
-            *
-    };
-    @readonly
-    entity Customers  as projection on db.Customers {
-        CustomerID, CompanyName, PostalCode
-    };
-        @readonly
-    entity CustomerDemographics  as projection on db.CustomerDemographics {
-      *
-    };
+    entity Categories as projection on northwind.Categories;
+    entity Customers as projection on northwind.Customers;
+    entity CustomerDemographics as projection on northwind.CustomerDemographics;   
+        
+
 }
